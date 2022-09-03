@@ -1,13 +1,12 @@
 
 
-let l = Number(prompt("Ingrese lel largo del Ortoedro", 1));
-let a = Number(prompt("Ingrese la ancho del Ortoedro", 1));
-let h = Number(prompt("Ingrese la altura del Ortoedro", 1));
+let Ab= Number(prompt("Ingrese el Area de la base del Prisma", 1));
+let h = Number(prompt("Ingrese la altura del Prisma", 1));
 let Volumen;
-    Volumen =  (l * a * h);
-function formulaVolumenOrtoedro(area, imagen="imagenesVol/Ortoedro.png"){
+    Volumen =  (Ab * h);
+function formulaVolumenPrisma(area, imagen="imagenesVol/Prisma.png"){
     document.body.insertAdjacentHTML("afterbegin", `<img src="${imagen}">`);
     return Volumen;
 }
-console.log(`El Volumen del Ortoedro es: ${formulaVolumenOrtoedro(Volumen)}`);
+console.log(`El Volumen del Prisma es: ${formulaVolumenPrisma(Volumen)}`);
 
