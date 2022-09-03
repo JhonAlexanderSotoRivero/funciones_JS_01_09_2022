@@ -1,11 +1,11 @@
 
 
-let Ab = Number(prompt("Ingrese el Area de base del Cono", 1));
-let h = Number(prompt("Ingrese la altura del Cono", 1));
+let r = Number(prompt("Ingrese el radio de la Esfera", 1));
+let pi = Math.PI;
 let Volumen;
-    Volumen = ((1/3 * Ab) * h);
-function formulaVolumenCono(Volumen, imagen="imagenesVol/Cono.png"){
+    Volumen = 4/3 * (pi * Math.pow(r,3));
+function formulaVolumenEsfera(Volumen, imagen="imagenesVol/Esfera.png"){
     document.body.insertAdjacentHTML("afterbegin", `<img src="${imagen}">`);
     return Volumen;
 }
-console.log(`El Volumen del Cono es: ${formulaVolumenCono(Volumen)}`);
+console.log(`El Volumen de la Esfera es: ${formulaVolumenEsfera(Volumen)}`);
