@@ -1,12 +1,13 @@
 
 
 let pi = Math.PI;
-let r = Number(prompt("Ingrese el radio del Circulo", 1));
+let r = Number(prompt("Ingrese el radio del Cono", 1));
+let g = Number(prompt("Ingrese el generatriz del Cono", 1));
 let area;
-    area = (pi * Math.pow(r,2));
-function formulaAreaCirculo(area, imagen="imagenes/Circulo.png"){
+    area = ((pi * r) * g);
+function formulaAreaCono(area, imagen="imagenes/Cono.png"){
     document.body.insertAdjacentHTML("afterbegin", `<img src="${imagen}">`);
     return area;
 }
-console.log(`El Area del Circulo es: ${formulaAreaCirculo(area)}`);
+console.log(`El Area del Cono es: ${formulaAreaCono(area)}`);
 
