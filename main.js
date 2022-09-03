@@ -1,12 +1,12 @@
 
 
-let b = Number(prompt("Ingrese la base del Triangulo", 1));
-let h = Number(prompt("Ingrese la altura del Triangulo", 1));
+let D = Number(prompt("Ingrese el diagonal mayor del Rombo", 1));
+let d = Number(prompt("Ingrese el diagonal menor del Rombo", 1));
 let area;
-    area = (b * h) / 2;
-function formulaAreaTriangulo(area, imagen="imagenes/Triangulo.png"){
+    area = (D * d) / 2;
+function formulaAreaRombo(area, imagen="imagenes/Rombo.png"){
     document.body.insertAdjacentHTML("afterbegin", `<img src="${imagen}">`);
     return area;
 }
-console.log(`El Area del Triangulo es: ${formulaAreaTriangulo(area)}`);
+console.log(`El Area del Rombo es: ${formulaAreaRombo(area)}`);
 
